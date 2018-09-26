@@ -1,0 +1,199 @@
+/* Sticky footer styles
+-------------------------------------------------- */
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  /* Margin bottom by footer height */
+  margin-bottom: 60px;
+}
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  height: 78px;
+  background-color: #666;
+  color: #fff;
+}
+
+/* My styling for the rest
+-------------------------------------------------- */
+* {
+  font-size: 16px;
+}
+
+html, body {
+  background: url(../images/pw_maze_white.png) repeat;
+}
+
+p {
+  line-height: 2;
+  color: #777;
+  margin-top: -2px;
+}
+
+small {
+  color: #fff;
+  font-size: 12px;
+}
+
+.footer > .container {
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-accent {
+  height: 8px;
+  background-color: #4aaaa5;
+}
+
+h1, h2 {
+  color: #4aaaa5;
+  font-size: 36px;
+  font-family: 'Georgia', Times, Times New Roman, serif;
+  margin-left: 15px;
+  margin-top: 15px;
+}
+
+h2 {
+  font-size: 24px;
+}
+
+#hr-1 {
+  border-width: 3px;
+  width: 97%;
+}
+
+#hr-2 {
+  width: 89%;
+}
+
+.navbar-default {
+  background-color: #fff;
+}
+
+.navbar-default .navbar-brand {
+  color: #ffffff;
+  background-color: #4aaaa5;
+  font-size: 36px;
+  font-family: 'Georgia', Times, Times New Roman, serif;
+  padding: 40px;
+  line-height: 0;
+  -webkit-transition: background-color 2s; /* Safari */
+  -webkit-transition-timing-function: linear; /* Safari */
+  transition: background-color 2s;
+  transition-timing-function: linear;
+}
+
+.navbar-nav{
+  margin: 29px -13px;
+}
+
+.navbar-toggle {
+  margin-top: 23px;
+}
+
+.nav > li > a {
+  padding: 0;
+  margin: 0;
+}
+
+.navbar-default .navbar-nav>li>a:focus, .navbar-default .navbar-nav>li>a:hover {
+  color: #4aaaa5;
+}
+
+.navbar-default .navbar-nav>li:not(:last-child) {
+  margin-right: 20px;
+  padding-right: 20px;
+  border-right: 1px solid #efefef;
+}
+
+.navbar-default .navbar-brand:focus, .navbar-default .navbar-brand:hover {
+  color: #4aaaa5;
+  background-color: transparent;
+}
+
+#panel-row {
+  margin-right: -30px;
+  margin-left: -30px;
+  margin-top: 10px;
+  margin-bottom: 30px;
+}
+
+.panel.panel-default {
+  padding: 24px 24px 0px 24px;
+}
+
+#headshot {
+  margin: 0 0 25px 0;
+}
+
+/*Stretch image beyond original size*/
+.row > div > img {
+  width: 100%;
+  display: block;
+}
+
+.img {
+  padding: 0 10px 20px 10px;
+  margin: -2px;
+}
+
+.gh-img {
+  margin-left: 4px;
+}
+
+.proj {
+  margin-bottom: -33px;
+}
+
+.proj > a {
+  display: block;
+  position: relative;
+  bottom: 80px;
+  color: #fff;
+  background-color: #4aaaa5;
+  padding: 20px;
+  font-size: 18px;
+  text-align: center;
+}
+
+button[type=submit] {
+  margin: 10px 0 25px 0;
+  background-color: #4aaaa5;
+  color: #fff;
+  border: none;
+  font-size: 16px;
+  padding: 12px 30px 12px 30px;
+}
+
+@media(max-width:767px) {
+  .navbar-brand {
+    width: 100%;
+    text-align: center;
+  }
+
+  .nav > li {
+    display: inline-flex;
+  }
+
+  .navbar-nav {
+    margin: 20px;
+    text-align: center;
+  }
+
+  .navbar-default .navbar-nav>li:not(:last-child) {
+    margin-right: 35px;
+    padding-right: 35px;
+  }
+
+  button[type=submit] {
+    width: 100%;
+  }
+}
